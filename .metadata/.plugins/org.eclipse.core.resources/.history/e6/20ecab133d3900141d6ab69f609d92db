@@ -1,0 +1,43 @@
+
+public class Calculator {
+	public static void main(String[] args) {
+
+		//variables
+		double atbats;
+		double hits;
+		double walks;
+		double hitbypitch;
+		double sacrificeflies;
+		double average;
+		double onbase;
+		
+		//calculate average
+		atbats = 92;
+		hits = 31;
+		average = hits/atbats;
+		
+		//print the atbats
+		System.out.print("At Bats: ");
+		System.out.println(atbats);
+		
+		//print the hits
+		System.out.print("Hits: ");
+		System.out.println(hits);
+		
+		//print the average
+		System.out.print("Your baseball player's average is: ");
+		System.out.println(average);
+		
+		//calculate on base percentage
+		walks = 2;
+		hitbypitch = 1;
+		sacrificeflies = 4;
+		onbase = (walks + hitbypitch +hits) / (atbats + walks +hitbypitch + sacrificeflies);
+	
+		//print onbase percentage
+		System.out.print("Your baseball player's average is: ");
+		System.out.print("Walks: ");
+		System.out.print("Your baseball player's On-Base Percentage is: ");
+		System.out.print(onbase);
+	}
+}

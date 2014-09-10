@@ -1,0 +1,24 @@
+
+public class Calculator {
+	public static void main(String[] args) {
+
+		//declare variables
+		double atbats;
+		double hits;
+		double average;
+		
+		//calculate average yo
+		atbats = 8;
+		hits = 4;
+		average = hits/atbats;
+		
+		//print that shit
+		System.out.print("Your baseball player batted ");
+		System.out.print(atbats);
+		System.out.print(" times.");
+		System.out.print("Your baseball player's average is: ");
+		System.out.print(average);
+		
+		//
+	}
+}
