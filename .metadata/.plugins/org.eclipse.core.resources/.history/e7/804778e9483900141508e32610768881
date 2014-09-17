@@ -1,12 +1,9 @@
 
 public class Calculator {
 	public static void main(String[] args) {
-		
-		//display at bats, hits, and average
 		average();
-		
-		//display walks, HBP, sacrifice, and on-base percentage
 		onbasepercent();
+		
 	}
 	public static void average() {
 		//variables
@@ -15,8 +12,6 @@ public class Calculator {
 		double average;
 			
 		//calculate average
-		atbats = 92;
-		hits = 31;
 		average = (double)hits/(double)atbats;
 		
 		//print the at bats
@@ -40,14 +35,13 @@ public class Calculator {
 		int walks;
 		int hitbypitch;
 		int sacrificeflies;
+		double average;
 		double onbase;
 			
 		//calculate on base percentage
 		walks = 2;
 		hitbypitch = 1;
 		sacrificeflies = 4;
-		hits = 31;
-		atbats = 92;
 		onbase = ((double)walks + (double)hitbypitch + (double)hits) / ((double)atbats + (double)walks + (double)hitbypitch + (double)sacrificeflies);
 			
 		//print hit by pitch
