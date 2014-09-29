@@ -1,0 +1,69 @@
+/**
+ * 
+ */
+import java.util.*;
+/**
+ * A program to determine which 'lil Wayne song you most identify with!
+ * @author westonstewarttennes
+ *
+ * 
+ */
+public class WhatX {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		// define variables
+		int lollipop = 0;
+		int dropTheWorld = 0;
+		int howToLove = 0;
+		int sixFootSeven = 0;
+		
+		//open scanner
+		Scanner console = new Scanner(System.in);
+		
+		// describe program to user
+		System.out.println("Which (terrible) 'Lil Wayne song are you?");
+		System.out.println("Please answer questions with a, b, c, or d!");
+		
+		//ask first question
+		firstQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
+		
+		//close scanner
+		System.out.println(lollipop);
+		System.out.println(dropTheWorld);
+		System.out.println(howToLove);
+		System.out.println(sixFootSeven);
+	}
+
+	public static int firstQuestion(Scanner console, int lollipop, int dropTheWorld, int howToLove, int sixFootSeven) {
+		//Ask first question and determine a, b, c, or d
+		System.out.print("What is your favorite colour?   ");
+		System.out.println("a) purple ");
+		System.out.print("b) green ");
+		System.out.print("c) cyan ");
+		System.out.print("d) blue ");
+		System.out.println();
+		String color = console.next();
+		
+		if (color == "a") {
+			lollipop++;
+		} else if (color == "b") {
+			dropTheWorld++;
+		} else if(color == "c") {
+			howToLove++;
+		} else if(color == "d") {
+			sixFootSeven++;
+		} else {
+			System.out.println("Not a valid answer!");
+		}
+		return lollipop;
+		return dropTheWorld;
+		return howToLove;
+		return sixFootSeven;
+		
+	}
+	
+}
