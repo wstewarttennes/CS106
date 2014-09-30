@@ -6,14 +6,13 @@ import java.util.*;
  * A program to determine which 'lil Wayne song you most identify with!
  * @author westonstewarttennes
  *
- *@param lollipop 
- *@param dropTheWorld
- *@param howToLove
- *@param sixFootSeven
  * 
  */
 public class WhatX {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		// define variables
@@ -48,13 +47,13 @@ public class WhatX {
 		if (color.equals("a")) {
 			lollipop++;
 		}
-		else if (color.equals("b")) {
+		if (color.equals("b")) {
 			dropTheWorld++;
 		}
-		else if (color.equals("c")) {
+		if (color.equals("c")) {
 			howToLove++;
 		}
-		else if (color.equals("d")) {
+		if (color.equals("d")) {
 			sixFootSeven++;
 		}
 		secondQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
@@ -73,13 +72,13 @@ public class WhatX {
 		if (color.equals("a")) {
 			lollipop++;
 		}
-		else if (color.equals("b")) {
+		if (color.equals("b")) {
 			dropTheWorld++;
 		}
-		else if (color.equals("c")) {
+		if (color.equals("c")) {
 			howToLove++;
 		}
-		else if (color.equals("d")) {
+		if (color.equals("d")) {
 			sixFootSeven++;
 		}
 		thirdQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
@@ -99,13 +98,13 @@ public class WhatX {
 		if (color.equals("a")) {
 			lollipop++;
 		}
-		else if (color.equals("b")) {
+		if (color.equals("b")) {
 			dropTheWorld++;
 		}
-		else if (color.equals("c")) {
+		if (color.equals("c")) {
 			howToLove++;
 		}
-		else if (color.equals("d")) {
+		if (color.equals("d")) {
 			sixFootSeven++;
 		}
 		fourthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
@@ -125,13 +124,13 @@ public class WhatX {
 		if (color.equals("a")) {
 			lollipop++;
 		}
-		else if (color.equals("b")) {
+		if (color.equals("b")) {
 			dropTheWorld++;
 		}
-		else if (color.equals("c")) {
+		if (color.equals("c")) {
 			howToLove++;
 		}
-		else if (color.equals("d")) {
+		if (color.equals("d")) {
 			sixFootSeven++;
 		}
 		fifthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
@@ -150,13 +149,13 @@ public class WhatX {
 		if (color.equals("a")) {
 			lollipop++;
 		}
-		else if (color.equals("b")) {
+		if (color.equals("b")) {
 			dropTheWorld++;
 		}
-		else if (color.equals("c")) {
+		if (color.equals("c")) {
 			howToLove++;
 		}
-		else if (color.equals("d")) {
+		if (color.equals("d")) {
 			sixFootSeven++;
 		}
 		console.close();

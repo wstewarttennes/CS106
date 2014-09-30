@@ -6,14 +6,13 @@ import java.util.*;
  * A program to determine which 'lil Wayne song you most identify with!
  * @author westonstewarttennes
  *
- *@param lollipop 
- *@param dropTheWorld
- *@param howToLove
- *@param sixFootSeven
  * 
  */
 public class WhatX {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		// define variables
