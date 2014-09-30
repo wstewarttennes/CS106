@@ -6,13 +6,12 @@ import java.util.*;
  * A program to determine which 'lil Wayne song you most identify with!
  * @author westonstewarttennes
  *
- *@param lollipop are characteristics that identify with the song "Lollipop"
- *@param dropTheWorld are characteristics that identify with the song "Drop the World"
- *@param howToLove are characteristics that identify with the song "How to Love"
- *@param sixFootSeven are characteristics that identify with the song "Six Foot Seven Foot"
+ *@param lollipop 
+ *@param dropTheWorld
+ *@param howToLove
+ *@param sixFootSeven
  * 
- *@return What 'Lil Wayne song you are!
- * @DISCLAIMER: I DONT ACTUALLY SUPPORT 'LIL WAYNE.
+ * @DISCLAIMER: I DONT ACTUALLY SUPPORT 'LIL WAYNE. THIS IS AN IRONIC QUIZ.
  */
 public class WhatX {
 
@@ -30,7 +29,6 @@ public class WhatX {
 		// describe program to user
 		System.out.println("Which 'Lil Wayne song are you?");
 		System.out.println("Please answer questions with a, b, c, or d!");
-		System.out.println("***Following links may lead to nauseau***");
 		System.out.println();
 		
 		//ask first question

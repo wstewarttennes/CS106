@@ -11,7 +11,6 @@ import java.util.*;
  *@param howToLove are characteristics that identify with the song "How to Love"
  *@param sixFootSeven are characteristics that identify with the song "Six Foot Seven Foot"
  * 
- *@return What 'Lil Wayne song you are!
  * @DISCLAIMER: I DONT ACTUALLY SUPPORT 'LIL WAYNE.
  */
 public class WhatX {
