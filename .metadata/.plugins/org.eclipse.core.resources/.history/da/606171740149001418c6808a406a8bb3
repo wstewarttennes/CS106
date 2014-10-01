@@ -176,7 +176,7 @@ public class WhatX {
 		System.out.println("Which car would you drive?   ");
 		System.out.print("a) An Ice Cream Truck");
 		System.out.print("b) The Batmobile ");
-		System.out.print("c) LoverCar ");
+		System.out.print("c) cyan ");
 		System.out.print("d) A Monster Truck ");
 		System.out.println();
 		String color = console.next();

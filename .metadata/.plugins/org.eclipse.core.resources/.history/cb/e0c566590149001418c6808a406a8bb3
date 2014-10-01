@@ -142,10 +142,10 @@ public class WhatX {
 			int dropTheWorld, int howToLove, int sixFootSeven) {
 		// Ask fourth question and determine a, b, c, or d
 		System.out.println("Who is your favorite rapper?   ");
-		System.out.print("a) Lil Wayne ");
+		System.out.print("a) purple ");
 		System.out.print("b) Eminem ");
-		System.out.print("c) Yung Lean ");
-		System.out.print("d) Mos Def ");
+		System.out.print("c) Katy Perry ");
+		System.out.print("d) blue ");
 		System.out.println();
 		String color = console.next();
 
@@ -176,7 +176,7 @@ public class WhatX {
 		System.out.println("Which car would you drive?   ");
 		System.out.print("a) An Ice Cream Truck");
 		System.out.print("b) The Batmobile ");
-		System.out.print("c) LoverCar ");
+		System.out.print("c) cyan ");
 		System.out.print("d) A Monster Truck ");
 		System.out.println();
 		String color = console.next();

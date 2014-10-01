@@ -37,7 +37,7 @@ public class WhatX {
 		// describe program to user
 		System.out.println("Which 'Lil Wayne song are you?");
 		System.out.println("Please answer questions with a, b, c, or d!");
-		System.out.println("***Included links may lead to explicit content***");
+		System.out.println("***Following links may lead to nauseau***");
 		System.out.println();
 
 		// ask first question
@@ -48,15 +48,14 @@ public class WhatX {
 	public static void firstQuestion(Scanner console, int lollipop,
 			int dropTheWorld, int howToLove, int sixFootSeven) {
 		// Ask first question and determine a, b, c, or d
-		System.out.println("What is your favorite colour?   ");
-		System.out.print("a) all colours! ");
+		System.out.print("What is your favorite colour?   ");
+		System.out.println("a) all colours! ");
 		System.out.print("b) black ");
 		System.out.print("c) pink ");
 		System.out.print("d) blue ");
 		System.out.println();
 		String color = console.next();
 
-		//add onto counting variables
 		if (color.equals("a")) {
 			lollipop++;
 		} else if (color.equals("b")) {
@@ -72,22 +71,20 @@ public class WhatX {
 		}
 		//send information to secondQuestion
 		secondQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
-		//close console
 		console.close();
 	}
 
 	public static void secondQuestion(Scanner console, int lollipop,
 			int dropTheWorld, int howToLove, int sixFootSeven) {
 		// Ask second question and determine a, b, c, or d
-		System.out.println("Who would you rather take to prom?   ");
-		System.out.print("a) Katy Perry ");
+		System.out.print("Who would you rather take to prom?   ");
+		System.out.println("a) Katy Perry ");
 		System.out.print("b) Marilyn Manson ");
 		System.out.print("c) Kim Kardashian ");
 		System.out.print("d) Dennis Rodman ");
 		System.out.println();
 		String color = console.next();
 
-		//add onto counting variables
 		if (color.equals("a")) {
 			lollipop++;
 		} else if (color.equals("b")) {
@@ -103,22 +100,20 @@ public class WhatX {
 		}
 		//send information to thirdQuestion
 		thirdQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
-		//close console
 		console.close();
 	}
 
 	public static void thirdQuestion(Scanner console, int lollipop,
 			int dropTheWorld, int howToLove, int sixFootSeven) {
 		// Ask third question and determine a, b, c, or d
-		System.out.println("What's your favorite candy?   ");
-		System.out.print("a) Lollipops. ");
+		System.out.print("What's your favorite candy?   ");
+		System.out.println("a) Lollipops. ");
 		System.out.print("b) I hate the world. ");
 		System.out.print("c) I looooveee candy! ");
 		System.out.print("d) Very tall candy. ");
 		System.out.println();
 		String color = console.next();
 
-		//add onto counting variables
 		if (color.equals("a")) {
 			lollipop++;
 		} else if (color.equals("b")) {
@@ -134,22 +129,20 @@ public class WhatX {
 		}
 		//send information to fourthQuestion
 		fourthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
-		//close console
 		console.close();
 	}
 
 	public static void fourthQuestion(Scanner console, int lollipop,
 			int dropTheWorld, int howToLove, int sixFootSeven) {
 		// Ask fourth question and determine a, b, c, or d
-		System.out.println("Who is your favorite rapper?   ");
-		System.out.print("a) Lil Wayne ");
-		System.out.print("b) Eminem ");
-		System.out.print("c) Yung Lean ");
-		System.out.print("d) Mos Def ");
+		System.out.print("What is your favorite colour?   ");
+		System.out.println("a) purple ");
+		System.out.print("b) green ");
+		System.out.print("c) cyan ");
+		System.out.print("d) blue ");
 		System.out.println();
 		String color = console.next();
 
-		//add onto counting variables
 		if (color.equals("a")) {
 			lollipop++;
 		} else if (color.equals("b")) {
@@ -166,22 +159,20 @@ public class WhatX {
 		
 		//send information to fifthQuestion
 		fifthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
-		//close console
 		console.close();
 	}
 
 	public static void fifthQuestion(Scanner console, int lollipop,
 			int dropTheWorld, int howToLove, int sixFootSeven) {
 		// Ask fifth question and determine a, b, c, or d
-		System.out.println("Which car would you drive?   ");
-		System.out.print("a) An Ice Cream Truck");
+		System.out.print("Which car would you drive?   ");
+		System.out.println("a) An Ice Cream Truck");
 		System.out.print("b) The Batmobile ");
-		System.out.print("c) LoverCar ");
+		System.out.print("c) cyan ");
 		System.out.print("d) A Monster Truck ");
 		System.out.println();
 		String color = console.next();
 
-		//add onto counting variables
 		if (color.equals("a")) {
 			lollipop++;
 		} else if (color.equals("b")) {
@@ -195,7 +186,6 @@ public class WhatX {
 			fifthQuestion(console, lollipop, dropTheWorld, howToLove,
 					sixFootSeven);
 		}
-		//close console for last time
 		console.close();
 		
 		//send information to finalCount
