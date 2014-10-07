@@ -42,7 +42,8 @@ public class WhatX {
 
 		// ask first question
 		firstQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
-
+		//close console
+		console.close();
 	}
 
 	public static void firstQuestion(Scanner console, int lollipop,
@@ -59,21 +60,27 @@ public class WhatX {
 		//add onto counting variables
 		if (color.equals("a")) {
 			lollipop++;
+			//send information to secondQuestion
+			secondQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("b")) {
 			dropTheWorld++;
+			//send information to secondQuestion
+			secondQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("c")) {
 			howToLove++;
+			//send information to secondQuestion
+			secondQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("d")) {
 			sixFootSeven++;
+			//send information to secondQuestion
+			secondQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else {
 			System.out.println("Not a valid answer! Please answer again.");
 			firstQuestion(console, lollipop, dropTheWorld, howToLove,
 					sixFootSeven);
 		}
-		//send information to secondQuestion
-		secondQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
-		//close console
-		console.close();
+
+
 	}
 
 	public static void secondQuestion(Scanner console, int lollipop,
@@ -90,21 +97,25 @@ public class WhatX {
 		//add onto counting variables
 		if (color.equals("a")) {
 			lollipop++;
+			//send information to thirdQuestion
+			thirdQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("b")) {
 			dropTheWorld++;
+			//send information to thirdQuestion
+			thirdQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("c")) {
 			howToLove++;
+			//send information to thirdQuestion
+			thirdQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("d")) {
 			sixFootSeven++;
+			//send information to thirdQuestion
+			thirdQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else {
 			System.out.println("Not a valid answer! Please answer again.");
 			secondQuestion(console, lollipop, dropTheWorld, howToLove,
 					sixFootSeven);
 		}
-		//send information to thirdQuestion
-		thirdQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
-		//close console
-		console.close();
 	}
 
 	public static void thirdQuestion(Scanner console, int lollipop,
@@ -121,21 +132,25 @@ public class WhatX {
 		//add onto counting variables
 		if (color.equals("a")) {
 			lollipop++;
+			//send information to fourthQuestion
+			fourthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("b")) {
 			dropTheWorld++;
+			//send information to fourthQuestion
+			fourthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("c")) {
 			howToLove++;
+			//send information to fourthQuestion
+			fourthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("d")) {
 			sixFootSeven++;
+			//send information to fourthQuestion
+			fourthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else {
 			System.out.println("Not a valid answer! Please answer again.");
 			thirdQuestion(console, lollipop, dropTheWorld, howToLove,
 					sixFootSeven);
 		}
-		//send information to fourthQuestion
-		fourthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
-		//close console
-		console.close();
 	}
 
 	public static void fourthQuestion(Scanner console, int lollipop,
@@ -152,22 +167,25 @@ public class WhatX {
 		//add onto counting variables
 		if (color.equals("a")) {
 			lollipop++;
+			//send information to fifthQuestion
+			fifthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("b")) {
 			dropTheWorld++;
+			//send information to fifthQuestion
+			fifthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("c")) {
 			howToLove++;
+			//send information to fifthQuestion
+			fifthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("d")) {
 			sixFootSeven++;
+			//send information to fifthQuestion
+			fifthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else {
 			System.out.println("Not a valid answer! Please answer again.");
 			fourthQuestion(console, lollipop, dropTheWorld, howToLove,
 					sixFootSeven);
 		}
-		
-		//send information to fifthQuestion
-		fifthQuestion(console, lollipop, dropTheWorld, howToLove, sixFootSeven);
-		//close console
-		console.close();
 	}
 
 	public static void fifthQuestion(Scanner console, int lollipop,
@@ -184,22 +202,25 @@ public class WhatX {
 		//add onto counting variables
 		if (color.equals("a")) {
 			lollipop++;
+			//send information to finalCount
+			finalCount(lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("b")) {
 			dropTheWorld++;
+			//send information to finalCount
+			finalCount(lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("c")) {
 			howToLove++;
+			//send information to finalCount
+			finalCount(lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else if (color.equals("d")) {
 			sixFootSeven++;
+			//send information to finalCount
+			finalCount(lollipop, dropTheWorld, howToLove, sixFootSeven);
 		} else {
 			System.out.println("Not a valid answer! Please answer again.");
 			fifthQuestion(console, lollipop, dropTheWorld, howToLove,
 					sixFootSeven);
 		}
-		//close console for last time
-		console.close();
-		
-		//send information to finalCount
-		finalCount(lollipop, dropTheWorld, howToLove, sixFootSeven);
 	}
 
 	public static void finalCount(int lollipop, int dropTheWorld,
