@@ -26,7 +26,6 @@ public class FileReading {
 		
 		//while loop
 		while (fileReader.hasNextLine()) {
-			
 			//date is the first string in each line
 			String date = fileReader.next();
 			//variable is the second string in each line 
@@ -74,14 +73,9 @@ public class FileReading {
 		fileReader.close();
 		
 		//output variables to file
-		output.println("Final checking account equals: $" + checking);
-		output.println("Final savings account equals: $" + savings);
-		output.println("Final credit card account equals: $" + creditCard);
-		
-		//print values in console as well
-		System.out.println("Final checking account equals: $" + checking);
-		System.out.println("Final savings account equals: $" + savings);
-		System.out.println("Final credit card account equals: $" + creditCard);
+		output.println("Checking account equals: $" + checking);
+		output.println("Savings account equals: $" + savings);
+		output.println("Credit Card account equals: $" + creditCard);
 		
 		//close output
 		output.close();
