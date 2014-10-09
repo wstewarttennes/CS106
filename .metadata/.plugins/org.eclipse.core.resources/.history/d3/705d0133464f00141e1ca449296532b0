@@ -1,0 +1,60 @@
+import java.io.*; //for files
+import java.util.*; //for scanner
+
+public class FileReading {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner fileReader = new Scanner(new File("src/input.txt"));
+		double checking = 0;
+		double savings = 0;
+		double creditCard = 0;
+		while (fileReader.hasNextLine()) {
+			String date = fileReader.next();
+			String variable = fileReader.next();
+			if (variable.equals("Credit")) {
+				String extraVariable = fileReader.next();
+			}
+			String plusOrMinus = fileReader.next();
+			if (plusOrMinus.equals("Opening")) {
+				String extraVariable2 = fileReader.next();
+			}
+			double value = fileReader.nextDouble();
+
+			if (variable.equals("Checking")) {
+				if (plusOrMinus.equals("Withdrawal")) {
+					checking -= value;
+				} else if (plusOrMinus.equals("Deposit")) {
+					checking += value;
+				} else if (plusOrMinus.equals("Opening")) {
+					checking += value;
+				}
+			} else if (variable.equals("Savings")) {
+				if (plusOrMinus.equals("Withdrawal")) {
+					savings -= value;
+				} else if (plusOrMinus.equals("Deposit")) {
+					savings += value;
+				} else if (plusOrMinus.equals("Opening")) {
+					savings += value;
+				}
+			} else if (variable.equals("Credit")) {
+				if (plusOrMinus.equals("Withdrawal")) {
+					creditCard -= value;
+				} else if (plusOrMinus.equals("Deposit")) {
+					creditCard += value;
+				} else if (plusOrMinus.equals("Opening")) {
+					creditCard += value;
+				}
+			}
+		
+		}
+		fileReader.close();
+		total(checking, savings, creditCard);
+	}
+
+	public static void total(double checking, double savings, double creditCard) {
+		System.out.println(checking);
+		System.out.println(savings);
+		System.out.println(creditCard);
+
+	}
+}
