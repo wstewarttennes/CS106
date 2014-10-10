@@ -76,7 +76,7 @@ public class FileReading {
 		//output variables to file
 		output.println("Final checking account equals: $" + checking);
 		output.println("Final savings account equals: $" + savings);
-		output.println("Final credit card account equals: $" + creditCard); 
+		output.println("Final credit card account equals: $" + creditCard);
 		
 		//print values in console as well
 		System.out.println("Final checking account equals: $" + checking);
