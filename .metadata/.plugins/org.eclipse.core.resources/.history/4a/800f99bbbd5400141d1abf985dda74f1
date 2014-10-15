@@ -1,0 +1,85 @@
+import java.io.*; //for files
+import java.util.*; //for scanner
+/**
+ * 
+ * @author westonstewarttennes
+ * 
+ * @param checking is the amount in checking account.
+ * @param savings is the amount in savings account.
+ * @param creditCard is the amount on Credit Card.
+ *
+ * @return final variables to output file: "src/output.txt"
+ */
+
+public class proj4knockoff {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		//open scanner from File
+		Scanner fileReader = new Scanner(new File("src/input.txt"));
+		//output to new file
+		PrintStream output = new PrintStream(new File("src/output.txt")); 
+		
+		//define variables
+		double checking = 0;
+		double savings = 0;
+		double creditCard = 0;
+		int lines = 0;
+		int counter = 0;
+		
+		while (fileReader.hasNextLine()) {
+			lines ++;
+			fileReader.nextLine();
+		}
+		String[] dates = new String[lines];
+		String[] accounts = new String[lines];
+		String[] transactions = new String[lines];
+		String[] amounts = new String[lines];
+		
+		//while loop
+		while (fileReader.hasNextLine()) {
+			
+			//date is the first string in each line
+			String date = fileReader.next();
+			dates[counter] = date;
+			//variable is the second string in each line 
+			String variable = fileReader.next();
+			accounts[counter] = variable;
+			if (variable.equals("Credit")) {
+				String extraVariable = fileReader.next();
+			}
+			//pluOrMinus is the third string in each line
+			String plusOrMinus = fileReader.next();
+			transactions[counter] = plusOrMinus;
+			if (plusOrMinus.equals("Opening")) {
+				String extraVariable2 = fileReader.next();
+			}
+			//value is the number at the end of each line
+			double value = fileReader.nextDouble();
+			amounts[counter] += value;
+
+			counter ++;
+		}
+		
+		//close file reader
+		fileReader.close();
+		for (int i=0; i<accounts.length; i++) {
+			System.out.println(dates[i] + accounts[i] + transactions[i] + amounts[i]);
+		}
+		//output variables to file
+		output.println("Final checking account equals: $" + checking);
+		output.println("Final savings account equals: $" + savings);
+		output.println("Final credit card account equals: $" + creditCard); 
+		
+		//print values in console as well
+		System.out.println("Final checking account equals: $" + checking);
+		System.out.println("Final savings account equals: $" + savings);
+		System.out.println("Final credit card account equals: $" + creditCard);
+		
+		//close output
+		output.close();
+
+	}
+
+
+}
