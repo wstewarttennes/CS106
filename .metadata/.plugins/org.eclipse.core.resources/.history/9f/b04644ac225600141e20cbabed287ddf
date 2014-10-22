@@ -86,24 +86,6 @@ public class proj4knockoff {
 					checking += amounts[counter];
 				}
 			}
-			if (accounts[counter].equals("Savings")) {
-				if (transactions[counter].equals("Opening")) {
-					savings += amounts[counter];
-				} else if (transactions[counter].equals("Withdrawal")) {
-					savings -= amounts[counter];
-				} else if (transactions[counter].equals("Deposit")) {
-					savings += amounts[counter];
-				}
-			}
-			if (accounts[counter].equals("Credit")) {
-				if (transactions[counter].equals("Opening")) {
-					creditCard += amounts[counter];
-				} else if (transactions[counter].equals("Withdrawal")) {
-					creditCard -= amounts[counter];
-				} else if (transactions[counter].equals("Deposit")) {
-					creditCard += amounts[counter];
-				}
-			}
 		}
 
 		for (int i=0; i<accounts.length; i++) {

@@ -78,31 +78,7 @@ public class proj4knockoff {
 		
 		while (fileReader.hasNextLine()) {
 			if (accounts[counter].equals("Checking")) {
-				if (transactions[counter].equals("Opening")) {
-					checking += amounts[counter];
-				} else if (transactions[counter].equals("Withdrawal")) {
-					checking -= amounts[counter];
-				} else if (transactions[counter].equals("Deposit")) {
-					checking += amounts[counter];
-				}
-			}
-			if (accounts[counter].equals("Savings")) {
-				if (transactions[counter].equals("Opening")) {
-					savings += amounts[counter];
-				} else if (transactions[counter].equals("Withdrawal")) {
-					savings -= amounts[counter];
-				} else if (transactions[counter].equals("Deposit")) {
-					savings += amounts[counter];
-				}
-			}
-			if (accounts[counter].equals("Credit")) {
-				if (transactions[counter].equals("Opening")) {
-					creditCard += amounts[counter];
-				} else if (transactions[counter].equals("Withdrawal")) {
-					creditCard -= amounts[counter];
-				} else if (transactions[counter].equals("Deposit")) {
-					creditCard += amounts[counter];
-				}
+			
 			}
 		}
 

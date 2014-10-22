@@ -69,57 +69,43 @@ public class proj4knockoff {
 			amounts[counter] = value;
 
 			counter ++;
-		}		
+			
+			//if statements
+			if (variable.equals("Checking")) {
+				if (plusOrMinus.equals("Withdrawal")) {
+					checking -= value;
+				} else if (plusOrMinus.equals("Deposit")) {
+					checking += value;
+				} else if (plusOrMinus.equals("Opening")) {
+					checking += value;
+				}
+			} else if (variable.equals("Savings")) {
+				if (plusOrMinus.equals("Withdrawal")) {
+					savings -= value;
+				} else if (plusOrMinus.equals("Deposit")) {
+					savings += value;
+				} else if (plusOrMinus.equals("Opening")) {
+					savings += value;
+				}
+			} else if (variable.equals("Credit")) {
+				if (plusOrMinus.equals("Withdrawal")) {
+					creditCard -= value;
+				} else if (plusOrMinus.equals("Deposit")) {
+					creditCard += value;
+				} else if (plusOrMinus.equals("Opening")) {
+					creditCard += value;
+				}
+			}
+		
+		}
+		
+		
 		//close file reader
 		fileReader.close();
-		
-		//reopen scanner
-		fileReader = new Scanner(new File("src/input.txt"));
-		
-		while (fileReader.hasNextLine()) {
-			if (accounts[counter].equals("Checking")) {
-				if (transactions[counter].equals("Opening")) {
-					checking += amounts[counter];
-				} else if (transactions[counter].equals("Withdrawal")) {
-					checking -= amounts[counter];
-				} else if (transactions[counter].equals("Deposit")) {
-					checking += amounts[counter];
-				}
-			}
-			if (accounts[counter].equals("Savings")) {
-				if (transactions[counter].equals("Opening")) {
-					savings += amounts[counter];
-				} else if (transactions[counter].equals("Withdrawal")) {
-					savings -= amounts[counter];
-				} else if (transactions[counter].equals("Deposit")) {
-					savings += amounts[counter];
-				}
-			}
-			if (accounts[counter].equals("Credit")) {
-				if (transactions[counter].equals("Opening")) {
-					creditCard += amounts[counter];
-				} else if (transactions[counter].equals("Withdrawal")) {
-					creditCard -= amounts[counter];
-				} else if (transactions[counter].equals("Deposit")) {
-					creditCard += amounts[counter];
-				}
-			}
-		}
 
 		for (int i=0; i<accounts.length; i++) {
 			System.out.println(dates[i] + "\t\t" + accounts[i] + "\t\t" + transactions[i] + "\t\t" + amounts[i]);
 		}
-		
-		//output variables to file
-		output.println("Final checking account equals: $" + checking);
-		output.println("Final savings account equals: $" + savings);
-		output.println("Final credit card account equals: $" + creditCard); 
-		
-		//print values in console as well
-		System.out.println("");
-		System.out.println("Final checking account equals: $" + checking);
-		System.out.println("Final savings account equals: $" + savings);
-		System.out.println("Final credit card account equals: $" + creditCard);
 
 		//close output
 		output.close();
