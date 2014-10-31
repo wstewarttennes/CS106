@@ -1,0 +1,4 @@
+
+public class Point {
+	Point p = new Point(3, 4);
+}

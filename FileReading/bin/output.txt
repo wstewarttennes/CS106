@@ -1,0 +1,3 @@
+Final checking account equals: $667.4
+Final savings account equals: $1200.0
+Final credit card account equals: $744.23

@@ -7,9 +7,12 @@ import java.awt.*;
 public class Practice {
 	
 	public static void main(String[] args) {
-		Point p = new Point(3,2);
-		p.translate(4,5);
-		System.out.print(p);
+		Point origin = new Point();
+		origin.x = 4;
+		origin.y = 9;
+		origin.y += 6;
+		System.out.print(origin.x + origin.y);
+
 
 	}
 

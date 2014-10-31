@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class DataArray {
+	
+	Scanner fileReader = new Scanner(new File("src/data.txt"));
+	
+	
+	while (fileReader.hasNextLine()) {
+		lines ++;
+		fileReader.nextLine();
+	}
+	fileReader.close();
+	
+	int counter = 0;
+
+
+}
+}

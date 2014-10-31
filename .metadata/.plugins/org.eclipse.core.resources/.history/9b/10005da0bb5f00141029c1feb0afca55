@@ -1,0 +1,23 @@
+
+public class Temperatures {
+	private String year;
+	private int january;
+	private int february;
+	private int march;
+	private int april;
+	private int may;
+	private int june;
+	private int july;
+	private int august;
+	private int september;
+	private int october;
+	private int november;
+	private int december;
+
+		// TODO Auto-generated constructor stub
+
+
+	public Temperatures(String year, int january, int february, int initMarch, int initApril, int initMay, int initJune, int initJuly, int initAugust, int initSeptember, int initOctober, int initNovember, int initDecember) {
+		
+	}
+}

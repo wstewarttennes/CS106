@@ -1,0 +1,16 @@
+import java.awt.*;
+
+/**
+ * @author westonstewarttennes
+ *
+ */
+public class Practice {
+	
+	public static void main(String[] args) {
+		Point origin = new Point();
+		System.out.print(origin);
+
+
+	}
+
+}

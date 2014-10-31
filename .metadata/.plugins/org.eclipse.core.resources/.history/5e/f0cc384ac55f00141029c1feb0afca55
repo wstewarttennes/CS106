@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.*;
+
+public class TemperatureAnalysis {
+	File f = new File("src/data.txt");
+	// load method()
+	int lines = 0;
+	Temperatures[] years;
+	Scanner fileReader = new Scanner(new File("src/data.txt"));
+	
+	while (fileReader.hasNextLine()) {
+		fileReader.nextLine();
+		lines ++;
+		}
+		fileReader.close();
+		
+	this.f = new Temperatures[this.lines];
+		
+		int i = 0;
+	fileReader = new Scanner(new File("src/data.txt"));
+	
+	while (fileReader.hasNextLine()) {
+		int year = fileReader.nextInt();
+		int january = fileReader.nextInt();
+		int february = fileReader.nextInt();
+		int march = fileReader.nextInt();
+		int april = fileReader.nextInt();
+		int may = fileReader.nextInt();
+		int june = fileReader.nextInt();
+		int july = fileReader.nextInt();
+		int august = fileReader.nextInt();
+		int september = fileReader.nextInt();
+		int october = fileReader.nextInt();
+		int november = fileReader.nextInt();
+		int december = fileReader.nextInt();
+		
+		years[i] = new Temperatures(year, january, february, march, april, may, june, july, august, september, october, november, december);
+		i++;
+		
+	}
+	fileReader.close();
+
+}
+
