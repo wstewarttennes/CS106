@@ -3,7 +3,8 @@ import java.util.*;
 
 public class TemperatureAnalysis {
 	
-	private Temperatures[] years;
+	public Temperatures[] allYears;
+	public String[] averages;
 	
 	public void load(String filePath) throws FileNotFoundException {
 
@@ -21,7 +22,7 @@ public class TemperatureAnalysis {
 		}
 		fileReader.close();
 
-		this.years = new Temperatures[lines];
+		this.allYears = new Temperatures[lines];
 
 		int i = 0;
 		fileReader = new Scanner(f);
@@ -44,18 +45,28 @@ public class TemperatureAnalysis {
 			int november = fileReader.nextInt();
 			int december = fileReader.nextInt();
 
-			years[i] = new Temperatures(year, january, february, march, april, may, june, july, august, september, october, november, december);
+			allYears[i] = new Temperatures(year, january, february, march, april, may, june, july, august, september, october, november, december);
 			i++;
-
+			
 		}
 		fileReader.close();
-		
 	}
+
 	public void analyze() {
-		for (Temperatures t : this.years) {
+		for (Temperatures t : this.allYears) {
 			System.out.println(t);
 		}
+		int a =1800;
+		for (Temperatures t : this.allYears) {
+			
+			System.out.println("The average change in temperature in " + a + " was " + t.getAverages() + " degrees C.");
+			a++;
+		}
+		
+
 	}
+
+	
 
 
 }

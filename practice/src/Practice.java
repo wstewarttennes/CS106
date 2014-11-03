@@ -1,19 +1,23 @@
 import java.awt.*;
+import java.math.*;
+
 
 /**
  * @author westonstewarttennes
  *
  */
-public class Practice {
+
+	public class Practice {
 	
-	public static void main(String[] args) {
-		Point origin = new Point();
-		origin.x = 4;
-		origin.y = 9;
-		origin.y += 6;
-		System.out.print(origin.x + origin.y);
+		double value = 12.5837326282;
+		int places = 3;
+		public static double round(double value, int places) {
+			if (places < 0) throw new IllegalArgumentException();
 
-
-	}
-
+			BigDecimal bd = new BigDecimal(value);
+			bd = bd.setScale(places, RoundingMode.HALF_UP);
+			return bd.doubleValue();
+		}
+			
 }
+
