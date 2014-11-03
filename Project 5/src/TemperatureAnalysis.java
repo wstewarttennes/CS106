@@ -30,6 +30,7 @@ public class TemperatureAnalysis {
 		fileReader.nextLine();
 		fileReader.nextLine();
 
+		//
 		while (fileReader.hasNext()) {
 			int year = fileReader.nextInt();
 			int january = fileReader.nextInt();
@@ -51,18 +52,16 @@ public class TemperatureAnalysis {
 		}
 		fileReader.close();
 	}
-
+	/** a method to analyze data and print it out along with average data each year */
 	public void analyze() {
-		for (Temperatures t : this.allYears) {
-			System.out.println(t);
-		}
 		int a =1800;
 		for (Temperatures t : this.allYears) {
+			System.out.println("Year" + "\t" + "Jan" + "\t" + "Feb" + "\t" + "Mar" + "\t" + "Apr" + "\t" + "May" + "\t" + "Jun" + "\t" + "Jul" + "\t" + "Aug" + "\t" + "Sep" + "\t" + "Oct" + "\t" + "Nov" + "\t" + "Dec" + "\t");
+			System.out.println(t);
 			
-			System.out.println("The average change in temperature in " + a + " was " + t.getAverages() + " degrees C.");
+			System.out.println("The average ∆ in temperature for " + a + " was " + t.getAverages() + " degrees C.");
 			a++;
 		}
-		
 
 	}
 

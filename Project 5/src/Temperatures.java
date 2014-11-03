@@ -1,3 +1,4 @@
+
 public class Temperatures {
 	public int year;
 	public int january;
@@ -12,9 +13,8 @@ public class Temperatures {
 	public int october;
 	public int november;
 	public int december;
-		// 
 
-
+	
 	public Temperatures (int inityear, int initjanuary, int initfebruary, int initmarch, int initapril, int initmay, int initjune, int initjuly, int initaugust, int initseptember, int initoctober, int initnovember, int initdecember) {
 		this.year = inityear;
 		this.january = initjanuary;

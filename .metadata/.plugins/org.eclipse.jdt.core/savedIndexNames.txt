@@ -19,7 +19,6 @@ INDEX VERSION 1.127+/Users/westonstewarttennes/CS106/.metadata/.plugins/org.ecli
 1744670643.index
 1384487945.index
 2545238116.index
-4259608413.index
 3321539481.index
 3018373180.index
 4082587601.index
