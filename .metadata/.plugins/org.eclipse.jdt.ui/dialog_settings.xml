@@ -40,6 +40,56 @@
 		<item value="/Users/westonstewarttennes/CS106/Project 5/javadoc.xml" key="antpath"/>
 		<item value="true" key="fromStandard"/>
 		<section name="projects">
+			<section name="Smiley">
+				<item value="/Users/westonstewarttennes/CS106/Smiley/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/westonstewarttennes/CS106/Smiley/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="This is">
+				<item value="/Users/westonstewarttennes/CS106/This is/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/westonstewarttennes/CS106/This is/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="practice">
+				<item value="/Users/westonstewarttennes/CS106/practice/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/westonstewarttennes/CS106/practice/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="FileReading">
+				<item value="/Users/westonstewarttennes/CS106/FileReading/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/westonstewarttennes/CS106/FileReading/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="WhatXAreYou">
+				<item value="/Users/westonstewarttennes/CS106/WhatXAreYou/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/westonstewarttennes/CS106/WhatXAreYou/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="Project 4 Knockoff">
+				<item value="/Users/westonstewarttennes/CS106/Project 4 Knockoff/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/westonstewarttennes/CS106/Project 4 Knockoff/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="InputScanner">
+				<item value="/Users/westonstewarttennes/CS106/InputScanner/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/westonstewarttennes/CS106/InputScanner/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="Calculator">
+				<item value="/Users/westonstewarttennes/CS106/Calculator/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/westonstewarttennes/CS106/Calculator/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="Project 3">
+				<item value="/Users/westonstewarttennes/CS106/Project 3/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/westonstewarttennes/CS106/Project 3/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="Project 5">
+				<item value="/Users/westonstewarttennes/CS106/Project 5/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/westonstewarttennes/CS106/Project 5/javadoc.xml" key="antpath"/>
+			</section>
 		</section>
 	</section>
 	<section name="JavadocWizardDialog">

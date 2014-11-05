@@ -7,8 +7,8 @@ import java.io.*;
  * a program that reads data from the GLOBAL Land-Ocean Temperature Index
  * 		and prints it out along with average temperature for each year (1800-2014).
  * 
- * 
- *
+ * @class TemperatureAnalysis a class to 
+ *@TemperatureAnalysis ta is the
  */
 public class Main {
 

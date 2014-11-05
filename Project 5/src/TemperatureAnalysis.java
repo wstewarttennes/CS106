@@ -1,10 +1,13 @@
 import java.io.*;
 import java.util.*;
-
+/**
+ * 
+ *
+ */
 public class TemperatureAnalysis {
 	
 	public Temperatures[] allYears;
-	public String[] averages;
+
 	
 	public void load(String filePath) throws FileNotFoundException {
 
@@ -30,7 +33,7 @@ public class TemperatureAnalysis {
 		fileReader.nextLine();
 		fileReader.nextLine();
 
-		//
+		//a while method that reads in 
 		while (fileReader.hasNext()) {
 			int year = fileReader.nextInt();
 			int january = fileReader.nextInt();

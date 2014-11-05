@@ -1,10 +1,6 @@
 /**
- * an object for one line of array allYears[] 
- * stores year and temperatures for each month
- * @param year the year each month corresponds to
- * @param january 	the temperature change in 0.01 degree Celsius in january
- * @param february 	the temperature change in 0.01 degree Celsius in february
- * @param march 	etc.
+ * an object for array years 
+ * 
  */
 public class Temperatures {
 	public int year;
