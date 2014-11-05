@@ -1,9 +1,13 @@
 import java.io.*;
 import java.util.*;
-
+/**
+ * 
+ *
+ */
 public class TemperatureAnalysis {
 	
-	public Temperatures[] eachYear;
+	public Temperatures[] allYears;
+
 	
 	public void load(String filePath) throws FileNotFoundException {
 
@@ -21,7 +25,7 @@ public class TemperatureAnalysis {
 		}
 		fileReader.close();
 
-		this.eachYear = new Temperatures[lines];
+		this.allYears = new Temperatures[lines];
 
 		int i = 0;
 		fileReader = new Scanner(f);
@@ -29,6 +33,7 @@ public class TemperatureAnalysis {
 		fileReader.nextLine();
 		fileReader.nextLine();
 
+		//a while method that reads in 
 		while (fileReader.hasNext()) {
 			int year = fileReader.nextInt();
 			int january = fileReader.nextInt();
@@ -44,25 +49,26 @@ public class TemperatureAnalysis {
 			int november = fileReader.nextInt();
 			int december = fileReader.nextInt();
 
-			eachYear[i] = new Temperatures(year, january, february, march, april, may, june, july, august, september, october, november, december);
+			allYears[i] = new Temperatures(year, january, february, march, april, may, june, july, august, september, october, november, december);
 			i++;
-
+			
 		}
 		fileReader.close();
-		
 	}
+	/** a method to analyze data and print it out along with average data each year */
 	public void analyze() {
-		for (Temperatures t : this.eachYear) {
+		int a =1800;
+		for (Temperatures t : this.allYears) {
+			System.out.println("Year" + "\t" + "Jan" + "\t" + "Feb" + "\t" + "Mar" + "\t" + "Apr" + "\t" + "May" + "\t" + "Jun" + "\t" + "Jul" + "\t" + "Aug" + "\t" + "Sep" + "\t" + "Oct" + "\t" + "Nov" + "\t" + "Dec" + "\t");
 			System.out.println(t);
-		}
-		Scanner fileReader = new Scanner("src/data.txt");
-		
-		for (int i = 0; i<eachYear.length ; i++) {
-			System.out.println(eachYear);
+			
+			System.out.println("The average ∆ in temperature for " + a + " was " + t.getAverages() + " degrees C.");
+			a++;
 		}
 
-		fileReader.close();
 	}
+
+	
 
 
 }
