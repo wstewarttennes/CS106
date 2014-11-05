@@ -72,6 +72,7 @@ public class TemperatureAnalysis {
 			System.out.println(t);
 			
 			System.out.println("The average ∆ in temperature for " + a + " was " + t.getAverages() + " degrees C.");
+			System.out.println("");
 			a++;
 		}
 	}

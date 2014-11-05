@@ -5,9 +5,7 @@ import java.io.*;
  * @version 1.0
  *
  * a program that reads data from the GLOBAL Land-Ocean Temperature Index
- * 		and prints it out along with average temperature change for each year (1800-2014).
- * 
- * NOTE: temperatures are in .01 degrees Celsius while average temperature change is in normal degrees Celsius
+ * 		and prints it out along with average temperature for each year (1800-2014).
  *
  */
 public class Main {
