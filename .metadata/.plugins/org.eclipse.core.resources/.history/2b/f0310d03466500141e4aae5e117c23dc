@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class competition {
+	public static void main(String[] args) {
+		Scanner console = new Scanner(System.in);
+		int number = console.nextInt();
+		int a = 0;
+		while (a < number) {
+		int squaresize = console.nextInt();
+		int oneone = console.nextInt();
+		int onetwo = console.nextInt();
+		int onethree = console.nextInt();
+		int twoone = console.nextInt();
+		int twotwo = console.nextInt();
+		int twothree = console.nextInt();
+		int threeone = console.nextInt();
+		int threetwo = console.nextInt();
+		int threethree = console.nextInt();
+		
+		}
+		console.close();
+		
+	}
+}

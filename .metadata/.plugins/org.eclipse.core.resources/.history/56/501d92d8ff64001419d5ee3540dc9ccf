@@ -1,0 +1,18 @@
+import java.util.*;
+
+
+
+/**
+ * @author westonstewarttennes
+ *
+ */
+
+public class Practice {
+		public static void main(String[] args) {
+			ArrayList<String> dogs = new ArrayList<String>();
+			dogs.add("Chiwawa");
+			dogs.add("dockshund");
+			
+		}
+}
+

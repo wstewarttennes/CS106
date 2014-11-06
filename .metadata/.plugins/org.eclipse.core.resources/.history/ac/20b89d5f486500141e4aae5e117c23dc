@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class competition {
+	public static void main(String[] args) {
+		Scanner console = new Scanner(System.in);
+		int a = console.nextInt();
+		double b = console.nextDouble();
+		double c = console.nextDouble();
+		double d = console.nextDouble();
+		double e = console.nextDouble();
+		
+			double price = console.nextDouble();
+			calculations(price);
+			b++;
+
+		console.close();
+	}	
+	public static void calculations(double price) {		
+		double newprice = price * 0.8; 
+		System.out.println("$" + newprice);
+	}
+	//public void setRoundingMode {
+	//	roundingMode = 
+	//}
+
+
+		
+}
+
