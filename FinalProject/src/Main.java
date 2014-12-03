@@ -1,0 +1,12 @@
+
+public class Main {
+	public static void main(String[] args) {
+		read r = new read();
+		r.load("src/data.csv");
+		System.out.println("yo");
+		Input i = new Input();
+		i.input();
+
+	}
+	
+}

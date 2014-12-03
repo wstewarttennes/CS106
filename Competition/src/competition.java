@@ -1,35 +1,39 @@
+import java.io.*;
 import java.util.*;
-import java.text.DecimalFormat;
-
-
-public class competition {
-	public static void main(String[] args) {
-		Scanner console = new Scanner(System.in);
-		int n = console.nextInt();
-		Double[] values = new Double[n];
-		int i = 0;
-		while (i < n) {
-			values[i] = console.nextDouble();
-			i++;
+class competition	{
+	public static void main(String args[]) throws Exception {
+		Scanner console = new Scanner(System.in); 
+		ArrayList<String> sing = new ArrayList<String>();
+		while (console.hasNextLine()) {
+			int number = console.nextInt();
+			if (number == -1) {
+				end(sing);
+			}
+			else if(isPerfectNumber(number)) {
+				sing.add(number + "=" );
+			} else {
+				sing.add(number + "is NOT a perfect number");
+			}
 		}
 		console.close();
-		DecimalFormat df1 = new DecimalFormat("0.00");
-		i = 0;
-		while (i < n) {
-			System.out.println("$" + df1.format(values[i]*0.8));
-			i++;
-		}
-
-			//double price = console.nextDouble();
-			//calculations(price);
-	}
-	
-
-	//public void setRoundingMode {
-	//	roundingMode = 
-	//}
-
-
 		
+	}
+
+	public static boolean isPerfectNumber(int number) {
+		int sum = 0;
+		for(int i=1; i<=number; i++) {
+			if(number%i == 0) {
+				sum += i;
+			}
+		} 
+		if(sum/2 == number) {
+			return true;
+		}
+		return false;
+	}
+	public static void end(ArrayList<String> sing) {
+		System.out.print("");
+		System.out.print(sing);
+	}
 }
 

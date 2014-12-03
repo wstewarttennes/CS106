@@ -1,0 +1,26 @@
+import java.io.File;
+import java.util.*;
+
+
+
+
+/**
+ * @author westonstewarttennes
+ *
+ */
+public class Practice {
+	public static void main(String[] args) {
+		int x = 10;
+		counter(x);
+		System.out.println(x);
+	}
+
+
+	public static void counter(int x) {
+		if (x > 0) {
+			return x -9;
+			x++;
+			counter(x);
+		}
+	}
+}
