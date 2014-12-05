@@ -40,60 +40,46 @@ public class Input {
 		//print stats of individual nba players
 		} else if (player.equalsIgnoreCase("stef")) {
 			System.out.println("print their stats");
-			comparePlayers();
+			//compare();
 		//player not found...
 		} else {
 			System.out.println("Player not found, please enter a player's name or type \"Main\" to return to the main menu.");
 			String string = console.next();
 			//return to the main menu
-			if (string.equalsIgnoreCase("Main")) {
-				input();
+			
 			//retry player name
-			} else {
-				players2(console, string);
+			
+				string.equalsIgnoreCase(player);
+				players2(console, player);
 			}
 		}
 	}
 	
 	public void teams(Scanner console) {
-		//for the first time the players methods are run
-		System.out.println("Please enter a players name, or enter \"list\" to see a full list of players.");
+		System.out.println("Please enter a team name, or enter \"list\" to see a full list of teams.");
 		String team = console.next();
-		teams2(console, team);
-	}
-
-public void teams2(Scanner console, String team) {
-	//list NBA teams if user types "list"
-	if (team.equalsIgnoreCase("list")) {
-		System.out.println("LIST NBA PLAYERS HERE");
-		teams(console);
-	//print stats of team
-	} else if (team.equalsIgnoreCase("stef")) {
-		System.out.println("print their stats");
-		compareTeams();
-	//team not found...
-	} else {
-		System.out.println("Team not found, please enter a team name or type \"Main\" to return to the main menu.");
-		String string = console.next();
-		//return to the main menu
-		if (string.equalsIgnoreCase("Main")) {
-			input();
-		//retry player name
+		if (team.equalsIgnoreCase("list")) {
+			System.out.println("LIST OF ALL TEAMS");
+		} else if (team.equalsIgnoreCase("a team")) {
+			System.out.println("team stats tho");
 		} else {
-			players2(console, string);
+			System.out.println("Team not found, please enter a team's name or type \"Main\" to return to the main menu.");
+			String string = console.next();
+			if (string.equalsIgnoreCase("main")) {
+				input();
+			} else {
+				string.equalsIgnoreCase(team);
+				
+			}
 		}
-	}
 	}
 	
 	public void allNBA(Scanner console) {
 		System.out.println("allNBA");
 	}
 	
-	public void comparePlayers() {
+	public void compare() {
 		System.out.println("Would you like to compare two players?");
-	}
-	public void compareTeams() {
-		System.out.println("Would you like to compare two teams?");
 	}
 
 }

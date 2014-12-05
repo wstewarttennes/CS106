@@ -58,7 +58,8 @@ public class read {
 				String pts = player[17];
 			
 				allPlayers.add( new Player(name, team, minutes, fg, fga, threep, threepa, ft, fta, or, dr, tot, a, pf, st, to, bl, pts));
-		
+			
+				System.out.println(allPlayers[1]);
 			}
  
 		} catch (FileNotFoundException e) {

@@ -93,7 +93,7 @@ public void teams2(Scanner console, String team) {
 		System.out.println("Would you like to compare two players?");
 	}
 	public void compareTeams() {
-		System.out.println("Would you like to compare two teams?");
+		System.out.println("Would you like to compare two players?");
 	}
 
 }

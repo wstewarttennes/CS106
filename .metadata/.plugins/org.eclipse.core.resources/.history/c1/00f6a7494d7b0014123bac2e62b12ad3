@@ -38,10 +38,10 @@ public class Player {
 		this.to = initto;
 		this.bl = initbl;
 		this.pts = initpts;
-
 	}
 	
 	public String toString() {
 		return this.name + this.team + this.minutes + this.fg + this.fga + this.threep + this.threepa + this.ft + this.fta + this.or + this.dr + this.tot + this.a +this.pf + this.st + this.to + this.bl + this.pts;
 	}
+	System.out.println(Player[0]);
 }

@@ -40,7 +40,7 @@ public class Input {
 		//print stats of individual nba players
 		} else if (player.equalsIgnoreCase("stef")) {
 			System.out.println("print their stats");
-			comparePlayers();
+			//compare();
 		//player not found...
 		} else {
 			System.out.println("Player not found, please enter a player's name or type \"Main\" to return to the main menu.");
@@ -70,7 +70,7 @@ public void teams2(Scanner console, String team) {
 	//print stats of team
 	} else if (team.equalsIgnoreCase("stef")) {
 		System.out.println("print their stats");
-		compareTeams();
+		compare();
 	//team not found...
 	} else {
 		System.out.println("Team not found, please enter a team name or type \"Main\" to return to the main menu.");
@@ -89,11 +89,8 @@ public void teams2(Scanner console, String team) {
 		System.out.println("allNBA");
 	}
 	
-	public void comparePlayers() {
+	public void compare() {
 		System.out.println("Would you like to compare two players?");
-	}
-	public void compareTeams() {
-		System.out.println("Would you like to compare two teams?");
 	}
 
 }

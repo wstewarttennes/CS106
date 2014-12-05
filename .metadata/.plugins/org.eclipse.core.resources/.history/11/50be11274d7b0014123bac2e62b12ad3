@@ -35,7 +35,7 @@ public class read {
 				String [] player = line.split(cvsSplitBy);
 				
 				// print out player and team name, 
-				//System.out.println(player[0] + "\t" + "\t" + "\t" + player[1]);
+				System.out.println(player[0] + "\t" + "\t" + "\t" + player[1]);
 			
 	
 				String name = player[0];
@@ -58,7 +58,7 @@ public class read {
 				String pts = player[17];
 			
 				allPlayers.add( new Player(name, team, minutes, fg, fga, threep, threepa, ft, fta, or, dr, tot, a, pf, st, to, bl, pts));
-		
+			
 			}
  
 		} catch (FileNotFoundException e) {

@@ -38,7 +38,6 @@ public class Player {
 		this.to = initto;
 		this.bl = initbl;
 		this.pts = initpts;
-
 	}
 	
 	public String toString() {
