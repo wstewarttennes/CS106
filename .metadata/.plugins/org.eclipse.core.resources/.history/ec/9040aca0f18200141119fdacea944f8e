@@ -1,0 +1,23 @@
+import java.io.File;
+import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+
+/**
+ * @author westonstewarttennes
+ *
+ */
+public class Practice {
+	public static void main(String[] args) {
+		
+		Players p = new Players();
+		p.load("src/data.csv");
+	}
+}
+
+
+

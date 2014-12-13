@@ -1,0 +1,73 @@
+import java.io.File;
+import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+
+/**
+ * @author westonstewarttennes
+ *
+ */
+public class Practice {
+	public static void main(String[] args) {
+		
+		Players p = new Players();
+		p.load("src/data.csv");
+	}
+}
+
+
+
+public class Players {
+
+	//CSV read and parse code from http://javarevisited.blogspot.com/2012/07/read-file-line-by-line-java-example-scanner.html
+	public void load(String filepath) {
+		System.out.println(playerName + " statistics:");
+		System.out.println("");
+		System.out.println("Player" + "\t" + "\t" + "\t" + "Minutes" + "\t" + "FG" + "\t" + "FGA" + "\t" + "3P" + "\t" + "3PA" + "\t" + "FT" + "\t" + "FTA" + "\t" + "OR" + "\t" + "DR" + "\t" + "TOT" + "\t" + "A" + "\t" + "PF" + "\t" + "ST" + "\t" + "TO" + "\t" + "BL" + "\t" + "PTS");
+
+		//String csvFile is the data file
+		String csvFile = filepath;
+
+		//read data file by commas (CSV file)
+		BufferedReader br = null;
+		String line = "";
+		String cvsSplitBy = ",";
+
+		try {
+
+			br = new BufferedReader(new FileReader(csvFile));
+			br.readLine();
+			br.readLine();
+			br.readLine();
+			br.readLine();
+			while ((line = br.readLine()) != null) {
+
+				// use comma as separator
+				String [] player = line.split(cvsSplitBy);
+
+
+				//print out specified player
+				if (player[0].equals(playerName)) {
+					System.out.println(name + "\t" + "\t" + minutes + "\t" + fg + "\t" + fga + "\t" + threep + "\t" + threepa + "\t" + ft + "\t" + fta + "\t" + or + "\t" + dr + "\t" + tot + "\t" + a + "\t" + pf + "\t" + st + "\t" + to + "\t" + bl + "\t" + pts);
+				}
+			}
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (br != null) {
+				try {
+					br.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+}
