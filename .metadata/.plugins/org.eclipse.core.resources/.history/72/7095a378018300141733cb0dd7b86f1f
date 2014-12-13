@@ -124,7 +124,7 @@ public class Input {
 	}
 
 	public void comparePlayers(Scanner console, TreeSet<String> allTeams, TreeSet<String> Players) {
-		System.out.println("Type in another player to compare stats, type \"list\" to see a list of all players, or type \"Main\" to return to the main menu.");
+		System.out.println("Type in another player to compare stats or type \"Main\" to return to the main menu.");
 		String i = console.nextLine();
 		//return to the main menu
 		if (i.equalsIgnoreCase("Main")) {
@@ -136,7 +136,7 @@ public class Input {
 		}
 	}
 	public void compareTeams(Scanner console, TreeSet<String> allTeams, TreeSet<String> Players) {
-		System.out.println("Type in another team to compare stats, type \"list\" to see a list of all teams, or type \"Main\" to return to the main menu.");
+		System.out.println("Type in another player to compare stats or type \"Main\" to return to the main menu.");
 		String i = console.nextLine();
 		//return to the main menu
 		if (i.equalsIgnoreCase("Main")) {
