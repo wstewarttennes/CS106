@@ -3,7 +3,6 @@
  * @author westonstewarttennes
  * 
  * A program that reads in NBA statistics and lets users sort by players and teams and compare statistics.
- * 
  * @param savings is the amount in savings account.
  * @param creditCard is the amount on Credit Card.
  *
