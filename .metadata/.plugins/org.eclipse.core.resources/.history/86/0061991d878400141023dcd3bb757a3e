@@ -3,19 +3,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-/**
- * this class prints out the statistics for a team specified by the user
- */
-public class Teams {
-	/**
-	 *
-	 * @param filepath is the filepath of data file
-	 * @param teamName is the team name from user input passed in from the Input class
-	 */
+
+public class Players {
+
 	//CSV read and parse code from http://javarevisited.blogspot.com/2012/07/read-file-line-by-line-java-example-scanner.html
-	public void load(String filepath, String teamName) {
-		System.out.println(teamName + " statistics:");
-		System.out.println("");
+	public void load(String filepath, String playerName) {
 		System.out.println("Player" + "\t" + "\t" + "\t" + "Minutes" + "\t" + "FG" + "\t" + "FGA" + "\t" + "3P" + "\t" + "3PA" + "\t" + "FT" + "\t" + "FTA" + "\t" + "OR" + "\t" + "DR" + "\t" + "TOT" + "\t" + "A" + "\t" + "PF" + "\t" + "ST" + "\t" + "TO" + "\t" + "BL" + "\t" + "PTS");
 
 		//String csvFile is the data file
@@ -57,8 +49,8 @@ public class Teams {
 				String bl = player[16];
 				String pts = player[17];
 				
-				//print out stats for players from a specified team
-				if (player[1].equals(teamName.toLowerCase())) {
+				//print out specified player
+				if (player[0].equals(playerName.toLowerCase())) {
 					System.out.println(name + "\t" + "\t" + minutes + "\t" + fg + "\t" + fga + "\t" + threep + "\t" + threepa + "\t" + ft + "\t" + fta + "\t" + or + "\t" + dr + "\t" + tot + "\t" + a + "\t" + pf + "\t" + st + "\t" + to + "\t" + bl + "\t" + pts);
 				}
 			}

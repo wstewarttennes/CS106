@@ -7,11 +7,7 @@ import java.io.IOException;
  * this class prints out the statistics for a team specified by the user
  */
 public class Teams {
-	/**
-	 *
-	 * @param filepath is the filepath of data file
-	 * @param teamName is the team name from user input passed in from the Input class
-	 */
+
 	//CSV read and parse code from http://javarevisited.blogspot.com/2012/07/read-file-line-by-line-java-example-scanner.html
 	public void load(String filepath, String teamName) {
 		System.out.println(teamName + " statistics:");

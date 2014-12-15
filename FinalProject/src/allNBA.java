@@ -5,8 +5,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.TreeSet;
 
+/**
+ * 
+ * this purpose of this class is to print out all NBA statistics
+ */
 public class allNBA {
-
+	/**
+	 * 
+	 * @param filepath is the filepath of the data file
+	 */
 	//CSV read and parse code from http://javarevisited.blogspot.com/2012/07/read-file-line-by-line-java-example-scanner.html
 	public void load(String filepath) {
 		System.out.println("All NBA statistics:");
