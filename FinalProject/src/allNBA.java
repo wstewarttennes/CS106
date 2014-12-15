@@ -34,10 +34,6 @@ public class allNBA {
 				String [] player = line.split(cvsSplitBy);
 				
 				
-				// print out player and team name, 
-				//System.out.println(player[0] + "\t" + "\t" + "\t" + player[1]);
-			
-	
 				String name = player[0];
 				String team = player[1];
 				String minutes = player[2];
@@ -57,6 +53,7 @@ public class allNBA {
 				String bl = player[16];
 				String pts = player[17];
 			
+				//prints out all NBA stats
 				System.out.println(name + "\t" + "\t" + team + "\t" + "\t" + minutes + "\t" + fg + "\t" + fga + "\t" + threep + "\t" + threepa + "\t" + ft + "\t" + fta + "\t" + or + "\t" + dr + "\t" + tot + "\t" + a + "\t" + pf + "\t" + st + "\t" + to + "\t" + bl + "\t" + pts);
 			}
 		

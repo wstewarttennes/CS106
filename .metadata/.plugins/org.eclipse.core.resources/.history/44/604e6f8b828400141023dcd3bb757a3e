@@ -11,19 +11,19 @@ public class Input {
 		System.out.println("Or enter 'C' to see all NBA statistics");
 		String answer = console.nextLine();
 		
-		//user wants to sort by individual players
+		//sort by individual players
 		if (answer.equalsIgnoreCase("a")) {
 			players(console, allTeams, Players);
 			
-		//user wants to sort by teams
+		//sort by teams
 		} else if (answer.equalsIgnoreCase("b")) {
 			teams(console, allTeams, Players);
 		
-		//user wants to see allNBA statistics
+		//sort by allNBA
 		} else if (answer.equalsIgnoreCase("c")) {
 			allNBA(console, allTeams, Players);
 		
-		//user did not enter a valid letter!
+		//did not enter a valid letter!
 		} else {
 			System.out.println("Please enter a valid letter!");
 			input(allTeams, Players);
@@ -91,7 +91,6 @@ public class Input {
 			
 		//print stats of team
 		} else if (allTeams.contains(team.toLowerCase())) {
-			
 			//go to Teams class to print out stats of that team
 			Teams t = new Teams();
 			t.load("src/data.csv", team.toLowerCase());
@@ -123,12 +122,10 @@ public class Input {
 		System.out.println("");
 		input(allTeams, Players);
 	}
-	
-	//lets the user type in another player to compare the two stat lines
+
 	public void comparePlayers(Scanner console, TreeSet<String> allTeams, TreeSet<String> Players) {
 		System.out.println("Type in another player to compare stats, type \"list\" to see a list of all players, or type \"Main\" to return to the main menu.");
 		String i = console.nextLine();
-		
 		//return to the main menu
 		if (i.equalsIgnoreCase("Main")) {
 			input(allTeams, Players);
@@ -138,12 +135,9 @@ public class Input {
 			players2(console, i, allTeams, Players);
 		}
 	}
-	
-	//lets user type in another team to compare the two stat lines
 	public void compareTeams(Scanner console, TreeSet<String> allTeams, TreeSet<String> Players) {
 		System.out.println("Type in another team to compare stats, type \"list\" to see a list of all teams, or type \"Main\" to return to the main menu.");
 		String i = console.nextLine();
-		
 		//return to the main menu
 		if (i.equalsIgnoreCase("Main")) {
 			input(allTeams, Players);

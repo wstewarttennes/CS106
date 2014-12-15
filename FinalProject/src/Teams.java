@@ -51,7 +51,7 @@ public class Teams {
 				String bl = player[16];
 				String pts = player[17];
 				
-				//print out players from specified team
+				//print out stats for players from a specified team
 				if (player[1].equals(teamName.toLowerCase())) {
 					System.out.println(name + "\t" + "\t" + minutes + "\t" + fg + "\t" + fga + "\t" + threep + "\t" + threepa + "\t" + ft + "\t" + fta + "\t" + or + "\t" + dr + "\t" + tot + "\t" + a + "\t" + pf + "\t" + st + "\t" + to + "\t" + bl + "\t" + pts);
 				}

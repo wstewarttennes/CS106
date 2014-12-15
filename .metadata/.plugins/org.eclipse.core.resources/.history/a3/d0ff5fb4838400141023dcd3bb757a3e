@@ -5,20 +5,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.TreeSet;
 
-public class read {
-	public ArrayList<Player> allPlayers;
-	public TreeSet<String> allTeams;
-	public TreeSet<String> Players;
-	
-	public read() {
-		this.allPlayers = new ArrayList<Player>();
-		this.allTeams = new TreeSet<String>();
-		this.Players = new TreeSet<String>();
-	}
-	
+public class allNBA {
+
 	//CSV read and parse code from http://javarevisited.blogspot.com/2012/07/read-file-line-by-line-java-example-scanner.html
 	public void load(String filepath) {
-			
+		System.out.println("All NBA statistics:");
+		System.out.println("");
+		System.out.println("Player" + "\t" + "\t" + "\t" + "Team" + "\t" + "\t" + "Minutes" + "\t" + "FG" + "\t" + "FGA" + "\t" + "3P" + "\t" + "3PA" + "\t" + "FT" + "\t" + "FTA" + "\t" + "OR" + "\t" + "DR" + "\t" + "TOT" + "\t" + "A" + "\t" + "PF" + "\t" + "ST" + "\t" + "TO" + "\t" + "BL" + "\t" + "PTS");
+		
 		//String csvFile is the data file
 		String csvFile = filepath;
 		
@@ -63,9 +57,7 @@ public class read {
 				String bl = player[16];
 				String pts = player[17];
 			
-				//allPlayers.add( new Player(name, team, minutes, fg, fga, threep, threepa, ft, fta, or, dr, tot, a, pf, st, to, bl, pts));
-				allTeams.add(player[1]);
-				Players.add(player[0]);
+				System.out.println(name + "\t" + "\t" + team + "\t" + "\t" + minutes + "\t" + fg + "\t" + fga + "\t" + threep + "\t" + threepa + "\t" + ft + "\t" + fta + "\t" + or + "\t" + dr + "\t" + tot + "\t" + a + "\t" + pf + "\t" + st + "\t" + to + "\t" + bl + "\t" + pts);
 			}
 		
 		} catch (FileNotFoundException e) {
@@ -81,10 +73,5 @@ public class read {
 				}
 			}
 		}
-		//send list of all players and all teams to input class/method
-		Input i = new Input();
-		i.input(allTeams, Players);
-
 	}
-
 }
