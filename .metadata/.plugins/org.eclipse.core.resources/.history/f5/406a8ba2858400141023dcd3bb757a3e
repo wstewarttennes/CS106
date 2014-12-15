@@ -13,18 +13,13 @@ public class read {
 	public TreeSet<String> Players;
 	/** 
 	 * the purpose of this method is to define lists where players and teams and all things are sorted
-	 * @param allPlayers is an array list of all Players and their statistics
-	 * @param allTeams is an array list of all Teams
-	 * @param Players is an array list of all Players
 	 */
 	public read() {
 		this.allPlayers = new ArrayList<Player>();
 		this.allTeams = new TreeSet<String>();
 		this.Players = new TreeSet<String>();
 	}
-	/** 
-	 * this method reads the input from a .csv file
-	 */
+	
 	//CSV read and parse code from http://javarevisited.blogspot.com/2012/07/read-file-line-by-line-java-example-scanner.html
 	public void load(String filepath) {
 			

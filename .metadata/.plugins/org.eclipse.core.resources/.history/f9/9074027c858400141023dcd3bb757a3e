@@ -4,27 +4,18 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.TreeSet;
-/** 
- * the purpose of this class is to read input and sort in lists 
- */
+
 public class read {
 	public ArrayList<Player> allPlayers;
 	public TreeSet<String> allTeams;
 	public TreeSet<String> Players;
-	/** 
-	 * the purpose of this method is to define lists where players and teams and all things are sorted
-	 * @param allPlayers is an array list of all Players and their statistics
-	 * @param allTeams is an array list of all Teams
-	 * @param Players is an array list of all Players
-	 */
+	
 	public read() {
 		this.allPlayers = new ArrayList<Player>();
 		this.allTeams = new TreeSet<String>();
 		this.Players = new TreeSet<String>();
 	}
-	/** 
-	 * this method reads the input from a .csv file
-	 */
+	
 	//CSV read and parse code from http://javarevisited.blogspot.com/2012/07/read-file-line-by-line-java-example-scanner.html
 	public void load(String filepath) {
 			
@@ -72,7 +63,7 @@ public class read {
 				String bl = player[16];
 				String pts = player[17];
 			
-				allPlayers.add( new Player(name, team, minutes, fg, fga, threep, threepa, ft, fta, or, dr, tot, a, pf, st, to, bl, pts));
+				//allPlayers.add( new Player(name, team, minutes, fg, fga, threep, threepa, ft, fta, or, dr, tot, a, pf, st, to, bl, pts));
 				allTeams.add(player[1]);
 				Players.add(player[0]);
 			}

@@ -140,7 +140,6 @@ public class Input {
 		System.out.println("");
 		input(allTeams, Players);
 	}
-	
 	/**
 	* this method lets the user type in another player to compare the two stat lines
 	*/
@@ -158,9 +157,7 @@ public class Input {
 		}
 	}
 	
-	/**
-	* this method lets user type in another team to compare the two stat lines
-	*/
+	//lets user type in another team to compare the two stat lines
 	public void compareTeams(Scanner console, TreeSet<String> allTeams, TreeSet<String> Players) {
 		System.out.println("Type in another team to compare stats, type \"list\" to see a list of all teams, or type \"Main\" to return to the main menu.");
 		String i = console.nextLine();

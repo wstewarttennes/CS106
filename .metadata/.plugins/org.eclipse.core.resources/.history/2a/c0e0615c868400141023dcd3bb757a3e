@@ -84,7 +84,7 @@ public class Input {
 	}
 	
 	/**
-	* this method asks the user to enter a team's name or print list of all teams
+	*ask to enter a team's name or print list of all teams
 	*/
 	public void teams(Scanner console, TreeSet<String> allTeams, TreeSet<String> Players) {
 		
@@ -141,9 +141,7 @@ public class Input {
 		input(allTeams, Players);
 	}
 	
-	/**
-	* this method lets the user type in another player to compare the two stat lines
-	*/
+	//lets the user type in another player to compare the two stat lines
 	public void comparePlayers(Scanner console, TreeSet<String> allTeams, TreeSet<String> Players) {
 		System.out.println("Type in another player to compare stats, type \"list\" to see a list of all players, or type \"Main\" to return to the main menu.");
 		String i = console.nextLine();
@@ -158,9 +156,7 @@ public class Input {
 		}
 	}
 	
-	/**
-	* this method lets user type in another team to compare the two stat lines
-	*/
+	//lets user type in another team to compare the two stat lines
 	public void compareTeams(Scanner console, TreeSet<String> allTeams, TreeSet<String> Players) {
 		System.out.println("Type in another team to compare stats, type \"list\" to see a list of all teams, or type \"Main\" to return to the main menu.");
 		String i = console.nextLine();

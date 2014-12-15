@@ -140,7 +140,6 @@ public class Input {
 		System.out.println("");
 		input(allTeams, Players);
 	}
-	
 	/**
 	* this method lets the user type in another player to compare the two stat lines
 	*/
@@ -157,7 +156,6 @@ public class Input {
 			players2(console, i, allTeams, Players);
 		}
 	}
-	
 	/**
 	* this method lets user type in another team to compare the two stat lines
 	*/
